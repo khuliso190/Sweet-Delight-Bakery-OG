@@ -28,10 +28,78 @@ breakpoint:to ensure that the layout changes fluidly across desktop,tablet, and 
 relative units:to ensure proportinality across various screens, relative units such as rem and percentage were utilized for font widths and sizes.
 responsive images: the hero images on the webpage is now a CSS backgroun, which takes care of responsiveness on its own.
 
+
 <img width="289" height="590" alt="Image" src="https://github.com/user-attachments/assets/de24ac99-23a9-4692-a970-d9fbe9555eed" />
 
 <img width="279" height="586" alt="Image" src="https://github.com/user-attachments/assets/79984e33-a741-4bf1-a7a3-0b636209ccc3" />
 
 #changelog
+1. Stylesheet & Base Setup
+Created external stylesheet style.css and linked it across all pages.
+Defined base styles with consistent fonts (Poppins for body text, Playfair Display for headings).
+Applied global reset (margin: 0; padding: 0; box-sizing: border-box;).
+Chose bakery brand colours → pastel pink (#d87b7b), cream (#fff8f0), chocolate brown (#3a2e2e).
+2. Typography
+Applied hierarchy to headings (h1, h2, h3) using rem units.
+Improved readability with increased line-height and letter-spacing.
+Styled buttons and links with uppercase text, hover colour changes, and consistent font weight.
+3. Layout Improvements
+Used Flexbox for navigation bar and footer alignment.
+Applied CSS Grid on the menu page → displays products in responsive cards.
+Added padding and spacing to improve readability and balance.
+4. Visual Styles
+Introduced pastel backgrounds, shadows, and rounded corners for menu cards.
+Added hover animations on cards, links, and buttons for interactivity.
+Designed call-to-action buttons (e.g., Order Now) with accent colours.
+5. Responsive Design
+Added media queries for key breakpoints:
+Desktop → 3-column product grid.
+Tablet → 2-column grid.
+Mobile → 1-column layout with stacked navigation.
+Used relative units (rem, %) for flexible scaling of text and images.
+6. Images & Accessibility
+Added descriptive alt text to all bakery product images.
+Implemented srcset and sizes for responsive image loading.
+Ensured images auto-scale (width: 100%; height: auto;) to fit all screens.
+7. Testing & Iteration
+Tested across Chrome, Firefox, and Edge developer tools.
+Verified responsiveness on desktop, tablet, and mobile.
+Adjusted button sizes, spacing, and text readability for small screens.
+Documented testing with screenshots (see /screenshots/ folder).
+
+#File structure
+
+sweet-delights-bakery/
+│
+├── index.html          # Home page
+├── about.html          # About Us page
+├── menu.html           # Menu page
+├── contact.html        # Contact page
+│
+├── css/
+│   └── style.css       # Main stylesheet
+│
+├── js/
+│   └── script.js       # JavaScript for interactivity 
+│
+├── images/
+│   ├── logo.png        # Bakery logo
+│   ├── hero.jpg        # Hero banner image
+│   └── products/       # Folder for menu item images
+│
+└── assets/
+    └── fonts/          # Custom or external fonts
+
+    #Technologies used
+    HTMLS-for the websites structures
+    CSSs-for layout,styling,and mobile responsiveness
+
+    How to view the website
+    To view the website ,open any of the HTML files (e.g index.html) in your web browser.
+
+    Author
+    Name- Mathomu KF (ST10437796)
+    Module: Web development.
+
 
 
