@@ -4,7 +4,11 @@
 
 <img width="1365" height="885" alt="Image" src="https://github.com/user-attachments/assets/df351219-9aa9-4f54-8067-d7f65eec23a1" />
 
-<img width="1358" height="896" alt="Image" src="https://github.com/user-attachments/assets/3fb727d0-aebd-42e8-8b46-cca44b9e482f" />
+<img width="1358" height="896" alt="Image" src="https://github.com/user-attachments/assets/3fb727d0-aebd-42e8-8b46-cca44b9e482f" /> 
+
+<img width="289" height="590" alt="Image" src="https://github.com/user-attachments/assets/de24ac99-23a9-4692-a970-d9fbe9555eed" />
+
+<img width="279" height="586" alt="Image" src="https://github.com/user-attachments/assets/79984e33-a741-4bf1-a7a3-0b636209ccc3" />
 
 A visual journey through our most beautiful and delicious custom cakes and treats.
 1. Stylesheet & Base Setup
