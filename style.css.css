@@ -1,0 +1,233 @@
+
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base */
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #3a2e2e; /* chocolate brown for text */
+    background-color: #fff8f0; /* cream background */
+    line-height: 1.6;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: #d87b7b; /* soft pastel pink */
+    line-height: 1.2;
+  }
+  
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #3a2e2e;
+    margin-bottom: 1em;
+  }
+  
+  a, button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #d87b7b;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+
+  
+ /* Grid for homepage products */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 40px 0;
+  }
+  
+  /* Flexbox for navbar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff0e6;
+    padding: 15px 30px;
+  }
+
+  /* Button styles */
+button, .btn {
+    background-color: #d87b7b;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #b85c5c; /* darker shade on hover */
+  }
+  
+  /* Product card */
+  .card {
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  /* Tablet */
+@media (max-width: 1023px) {
+    .products {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 767px) {
+    .products {
+      grid-template-columns: 1fr;
+    }
+  
+    nav {
+      flex-direction: column;
+    }
+  }
+
+  h1 { font-size: 2.5rem; }
+p { font-size: 1rem; }
+img { width: 100%; height: auto; }
+
+
+<img 
+  src="images/cake-small.jpg" 
+  srcset="images/cake-small.jpg 480w,
+          images/cake-medium.jpg 768w,
+          images/cake-large.jpg 1200w"
+  sizes="(max-width: 600px) 480px,
+         (max-width: 1024px) 768px,
+         1200px"
+  alt="Freshly baked cake from Sweet Delights Bakery">
+
+  /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff8f0; /* cream */
+    color: #3a2e2e; /* chocolate brown */
+    line-height: 1.6;
+  }
+  
+  /* Header Navigation */
+  header {
+    background-color: #d87b7b; /* pastel pink */
+    padding: 15px 30px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #3a2e2e; /* chocolate brown on hover */
+  }
+  
+  /* Menu Page Title */
+  .menu-title {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #d87b7b;
+  }
+  
+  /* Menu Grid Layout */
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 0 40px 60px;
+  }
+  
+  /* Menu Item Card */
+  .menu-item {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.15);
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .menu-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin: 15px 0 5px;
+    color: #3a2e2e;
+  }
+  
+  .menu-item p {
+    font-size: 0.95rem;
+    padding: 0 15px;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    display: inline-block;
+    margin: 10px 0 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #d87b7b;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .menu-title {
+      font-size: 2rem;
+    }
+  }
+  
+
