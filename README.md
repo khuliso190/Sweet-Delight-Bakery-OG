@@ -90,16 +90,16 @@ sweet-delights-bakery/
 └── assets/
     └── fonts/          # Custom or external fonts
 
-    #Technologies used
-    HTMLS-for the websites structures
-    CSSs-for layout,styling,and mobile responsiveness
+#Technologies used
+HTMLS-for the websites structures
+CSSs-for layout,styling,and mobile responsiveness
 
-    How to view the website
-    To view the website ,open any of the HTML files (e.g index.html) in your web browser.
+#How to view the website
+To view the website ,open any of the HTML files (e.g index.html) in your web browser.
 
-    Author
-    Name- Mathomu KF (ST10437796)
-    Module: Web development.
+#Author
+Name- Mathomu KF (ST10437796)
+Module: Web development.
 
 
 
