@@ -1,4 +1,11 @@
 # Sweet-Delight-Bakery-OG
+
+<img width="1361" height="894" alt="Image" src="https://github.com/user-attachments/assets/0db47117-ba72-4580-9493-fe87d1b2dd11" />
+
+<img width="1365" height="885" alt="Image" src="https://github.com/user-attachments/assets/df351219-9aa9-4f54-8067-d7f65eec23a1" />
+
+<img width="1358" height="896" alt="Image" src="https://github.com/user-attachments/assets/3fb727d0-aebd-42e8-8b46-cca44b9e482f" />
+
 A visual journey through our most beautiful and delicious custom cakes and treats.
 1. Stylesheet & Base Setup
 Created an external stylesheet (style.css) and linked it to all HTML pages.
