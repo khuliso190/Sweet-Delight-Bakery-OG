@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delight Bakery - Home</title>
+    <link rel="stylesheet" href="CSS/style.css.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <a href="index.html">
+                <span>🧁</span>
+                <span>Sweet Delight Bakery</span>
+            </a>
+            <div class="nav-links">
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <div class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Shopping Cart Modal -->
+    <div class="overlay" id="overlay"></div>
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-header">
+            <h3>Your Shopping Cart</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cartTotal">R0.00</span>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+    </div>
+
+     <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Baked with Love, Served with a Smile</h1>
+            <p>Discover a world of delicious pastries, cakes, and treats made with the finest ingredients.</p>
+            <a href="#menu-preview" class="cta-button">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section id="about-preview">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="images/istockphoto-533725350-1024x1024.jpg" alt="Bakery interior">
+            </div>
+            <div class="about-content">
+                <h2>Our Sweet Story</h2>
+                <p>Welcome to Sweet Delight, where every creation tells a story of passion and tradition. We started with a simple dream: to share the joy of freshly baked goods with our community.</p>
+                <p>We use only the finest, locally-sourced ingredients to ensure every bite is a moment of pure bliss. Our recipes are a blend of classic techniques and modern innovation, resulting in treats that are both comforting and exciting.</p>
+                <a href="about.html" class="read-more">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview Section -->
+    <section id="menu-preview">
+        <div class="section-header">
+            <h2>Our Featured Delights</h2>
+            <p>A taste of our most popular and beloved creations.</p>
+        </div>
+        <div class="menu-grid">
+            <!-- Card 1: Cupcake -->
+            <div class="menu-card">
+                <img src="images/darko-trajkovic-zB7r9P22rJw-unsplash.jpg" alt="Chocolate Cupcake">
+                <div class="menu-card-content">
+                    <h3>Chocolate Bliss Cupcake</h3>
+                    <p><strong><i>Rich chocolate cake with a velvety chocolate buttercream frosting.</i></strong></p>
+                    <button data-id="1" data-name="Chocolate Bliss Cupcake" data-price="22.50"><i class="fas fa-shopping-cart"></i> ADD TO CART - R22.50</button>
+                </div>
+            </div>
+
+            <!-- Card 2: Carrot cake -->
+            <div class="menu-card">
+                <img src="images/sharon-chen-nsTu5pzb84M-unsplash.jpg" alt="Carrot Cake">
+                <div class="menu-card-content">
+                    <h3>Carrot Cake</h3>
+                    <p><strong><i>Spiced cake with walnuts and cream cheese icing</i></strong></p>
+                    <button data-id="2" data-name="Carrot Cake" data-price="200"><i class="fas fa-shopping-cart"></i> ADD TO CART - R200</button>
+                </div>
+            </div>
+
+            <!-- Card 3: Red Velvet Cake -->
+            <div class="menu-card">
+                <img src="images/lucas-andrade-QXpEG2YbeDY-unsplash.jpg" alt="Red Velvet Cake">
+                <div class="menu-card-content">
+                    <h3>Red Velvet Cake</h3>
+                    <p><strong><i>Cream cheese frosting and cocoa flavor</i></strong></p>
+                    <button data-id="3" data-name="Red Velvet Cake" data-price="350"><i class="fas fa-shopping-cart"></i> ADD TO CART - R350</button>
+                </div>
+            </div>
+        </div>
+        <a href="menu.html" class="view-menu">View Full Menu</a>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery-section">
+        <div class="section-header">
+            <h2>Our Sweet Creations</h2>
+            <p>A visual journey through our most beautiful and delicious custom cakes and treats.</p>
+        </div>
+        <div class="gallery-grid">
+            <a href="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1065&q=80" data-lightbox="gallery" data-title="Custom Wedding Cake">
+                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1065&q=80" alt="Custom Wedding Cake">
+            </a>
+            <a href="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1789&q=80" data-lightbox="gallery" data-title="Chocolate Fudge Cake">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1789&q=80" alt="Chocolate Fudge Cake">
+            </a>
+            <a href="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" data-lightbox="gallery" data-title="Assorted Pastries">
+                <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" alt="Assorted Pastries">
+            </a>
+            <a href="https://images.unsplash.com/photo-1569864358642-9d1684040f43?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-lightbox="gallery" data-title="Colorful Macarons">
+                <img src="images/chelsea-audibert-hV1gChgMa-k-unsplash.jpg" alt="Colorful Macarons">
+            </a>
+            <a href="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" data-lightbox="gallery" data-title="Artisan Breads">
+                <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Artisan Breads">
+            </a>
+            <a href="https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmlydGhkYXklMjBjYWtlfGVufDB8fDB8fHww" data-lightbox="gallery" data-title="Custom Birthday Cake">
+                <img src="images/stephen-wheeler-LRIQuZyxKRM-unsplash.jpg" alt="Custom Birthday Cake">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <p>&copy; 2025 Sweet Delight Bakery. All rights reserved.</p>
+        </div>
+
+        <div class="footer-section">
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank">Facebook</a>
+                        <a href="https://instagram.com" target="_blank">Instagram</a>
+                        <a href="https://twitter.com" target="_blank">Twitter</a>
+                    </div>
+                </div>
+    </footer>
+
+    <!-- Lightbox Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>

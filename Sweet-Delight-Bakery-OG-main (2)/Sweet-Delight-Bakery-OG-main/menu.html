@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delight Bakery- Menu</title>
+    <link rel="stylesheet" href="CSS/style.css.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+   <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <a href="index.html">
+                <span>🧁</span>
+                <span>Sweet Delight Bakery</span>
+            </a>
+            <div class="nav-links">
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <div class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Shopping Cart Modal -->
+    <div class="overlay" id="overlay"></div>
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-header">
+            <h3>Your Shopping Cart</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cartTotal">R0.00</span>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+    </div>
+
+    <!-- Menu Hero Section -->
+    <section class="menu-hero">
+        <div class="menu-hero-content">
+            <h1>Our Delicious Menu</h1>
+            <p>Freshly baked treats made with love and the finest ingredients</p>
+        </div>
+    </section>
+
+    <!-- Cakes Section -->
+    <section class="menu-section">
+        <div class="section-header">
+            <h2>Specialty Cakes</h2>
+            <p>Perfect for celebrations or any day that needs a little sweetness</p>
+        </div>
+
+        <div class="menu-grid">
+            <!-- Red Velvet Cake -->
+            <div class="menu-card" data-category="cakes">
+                <div class="card-image-container">
+                    <img src="images/lucas-andrade-QXpEG2YbeDY-unsplash.jpg" alt="Red Velvet Cake">
+                    <div class="special-offer">Bestseller</div>
+                </div>
+                <div class="menu-card-content">
+                    <h3>Red Velvet Cake</h3>
+                    <p>Moist red velvet layers with cream cheese frosting and cocoa flavor</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag">Contains Dairy</span>
+                        <span class="dietary-tag">Contains Gluten</span>
+                    </div>
+                    <div class="menu-card-price">R350.00</div>
+                    <button data-id="3" data-name="Red Velvet Cake" data-price="350">
+                        <i class="fas fa-shopping-cart"></i> ADD TO CART
+                    </button>
+                </div>
+            </div>
+
+            <!-- Carrot Cake -->
+            <div class="menu-card" data-category="cakes">
+                <div class="card-image-container">
+                    <img src="images/sharon-chen-nsTu5pzb84M-unsplash.jpg" alt="Carrot Cake">
+                </div>
+                <div class="menu-card-content">
+                    <h3>Carrot Cake</h3>
+                    <p>Spiced cake with walnuts, pineapple, and cream cheese icing</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag">Contains Nuts</span>
+                        <span class="dietary-tag">Contains Dairy</span>
+                        <span class="dietary-tag">Contains Gluten</span>
+                    </div>
+                    <div class="menu-card-price">R200.00</div>
+                    <button data-id="2" data-name="Carrot Cake" data-price="200">
+                        <i class="fas fa-shopping-cart"></i> ADD TO CART
+                    </button>
+                </div>
+            </div>
+
+            <!-- Chocolate Fudge Cake -->
+            <div class="menu-card" data-category="cakes">
+                <div class="card-image-container">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Chocolate Fudge Cake">
+                </div>
+                <div class="menu-card-content">
+                    <h3>Chocolate Fudge Cake</h3>
+                    <p>Rich chocolate layers with dark chocolate ganache and fudge filling</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag">Contains Dairy</span>
+                        <span class="dietary-tag">Contains Gluten</span>
+                    </div>
+                    <div class="menu-card-price">R150.00</div>
+                    <button data-id="4" data-name="Chocolate Fudge Cake" data-price="150">
+                        <i class="fas fa-shopping-cart"></i> ADD TO CART
+                    </button>
+                </div>
+            </div>
+
+            <!-- Classic Vanilla Cake -->
+            <div class="menu-card" data-category="cakes">
+                <div class="card-image-container">
+                    <img src="images/caitlyn-de-wild-5Uckyl6_n70-unsplash.jpg" alt="Classic Vanilla Cake">
+                </div>
+                <div class="menu-card-content">
+                    <h3>Classic Vanilla Cake</h3>
+                    <p>Moist vanilla sponge with vanilla buttercream frosting and fresh berries</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag">Contains Dairy</span>
+                        <span class="dietary-tag">Contains Gluten</span>
+                    </div>
+                    <div class="menu-card-price">R199.00</div>
+                    <button data-id="5" data-name="Classic Vanilla Cake" data-price="199">
+                        <i class="fas fa-shopping-cart"></i> ADD TO CART
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cupcakes Section -->
+    <section class="menu-section">
+        <div class="section-header">
+            <h2>Delicious Cupcakes</h2>
+            <p>Perfect individual treats in a variety of flavors</p>
+        </div>
+
+        <div class="menu-grid">
+            <!-- Chocolate Bliss Cupcake -->
+            <div class="menu-card" data-category="cupcakes">
+                <div class="card-image-container">
+                    <img src="images/darko-trajkovic-zB7r9P22rJw-unsplash.jpg" alt="Chocolate Cupcake">
+                    <div class="special-offer">Popular</div>
+                </div>
+                <div class="menu-card-content">
+                    <h3>Chocolate Bliss Cupcake</h3>
+                    <p>Rich chocolate cake with velvety chocolate buttercream frosting</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag">Contains Dairy</span>
+                        <span class="dietary-tag">Contains Gluten</span>
+                    </div>
+                    <div class="menu-card-price">R22.50</div>
+                    <button data-id="1" data-name="Chocolate Bliss Cupcake" data-price="22.50">
+                        <i class="fas fa-shopping-cart"></i> ADD TO CART
+                    </button>
+                </div>
+            </div>
+
+            <!-- Vanilla Berry Cupcake -->
+            <div class="menu-card" data-category="cupcakes">
+                <div class="card-image-container">
+                    <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Vanilla Berry Cupcake">
+                </div>
+                <div class="menu-card-content">
+                    <h3>Vanilla Berry Cupcake</h3>
+                    <p>Light vanilla cake with mixed berry buttercream and fresh berry topping</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag">Contains Dairy</span>
+                        <span class="dietary-tag">Contains Gluten</span>
+                    </div>
+                    <div class="menu-card-price">R24.00</div>
+                    <button data-id="11" data-name="Vanilla Berry Cupcake" data-price="24">
+                        <i class="fas fa-shopping-cart"></i> ADD TO CART
+                    </button>
+                </div>
+            </div>
+
+            <!-- Red Velvet Cupcake -->
+            <div class="menu-card" data-category="cupcakes">
+                <div class="card-image-container">
+                    <img src="https://images.unsplash.com/photo-1599785209796-786432b228bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Red Velvet Cupcake">
+                </div>
+                <div class="menu-card-content">
+                    <h3>Red Velvet Cupcake</h3>
+                    <p>Classic red velvet with cream cheese frosting and sprinkles</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag">Contains Dairy</span>
+                        <span class="dietary-tag">Contains Gluten</span>
+                    </div>
+                    <div class="menu-card-price">R25.00</div>
+                    <button data-id="12" data-name="Red Velvet Cupcake" data-price="25">
+                        <i class="fas fa-shopping-cart"></i> ADD TO CART
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cookies & Brownies Section -->
+    <section class="menu-section">
+        <div class="section-header">
+            <h2>Cookies & Brownies</h2>
+            <p>Classic treats perfect for any time of day</p>
+        </div>
+
+        <div class="menu-grid">
+            <!-- Chocolate Chip Cookie -->
+            <div class="menu-card" data-category="cookies">
+                <div class="card-image-container">
+                    <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Chocolate Chip Cookie">
+                </div>
+                <div class="menu-card-content">
+                    <h3>Chocolate Chip Cookie</h3>
+                    <p>Chewy and gooey classic with semi-sweet chocolate chunks</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag">Contains Dairy</span>
+                        <span class="dietary-tag">Contains Gluten</span>
+                    </div>
+                    <div class="menu-card-price">R59.00 (pack of 6)</div>
+                    <button data-id="6" data-name="Chocolate Chip Cookie" data-price="59">
+                        <i class="fas fa-shopping-cart"></i> ADD TO CART
+                    </button>
+                </div>
+            </div>
+
+            <!-- Oatmeal Raisin Cookie -->
+            <div class="menu-card" data-category="cookies">
+                <div class="card-image-container">
+                    <img src="images/julissa-capdevilla-tDoHiqXl9b8-unsplash.jpg" alt="Oatmeal Raisin Cookie">
+                </div>
+                <div class="menu-card-content">
+                    <h3>Oatmeal Raisin Cookie</h3>
+                    <p>Soft and hearty with cinnamon and plump raisins</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag">Contains Dairy</span>
+                        <span class="dietary-tag">Contains Gluten</span>
+                    </div>
+                    <div class="menu-card-price">R59.00 (pack of 6)</div>
+                    <button data-id="7" data-name="Oatmeal Raisin Cookie" data-price="59">
+                        <i class="fas fa-shopping-cart"></i> ADD TO CART
+                    </button>
+                </div>
+            </div>
+
+            <!-- Double Chocolate Cookie -->
+            <div class="menu-card" data-category="cookies">
+                <div class="card-image-container">
+                    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Double Chocolate Cookie">
+                </div>
+                <div class="menu-card-content">
+                    <h3>Double Chocolate Cookie</h3>
+                    <p>Rich cocoa base with white and dark chocolate chunks</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag">Contains Dairy</span>
+                        <span class="dietary-tag">Contains Gluten</span>
+                    </div>
+                    <div class="menu-card-price">R59.00 (pack of 6)</div>
+                    <button data-id="8" data-name="Double Chocolate Cookie" data-price="59">
+                        <i class="fas fa-shopping-cart"></i> ADD TO CART
+                    </button>
+                </div>
+            </div>
+
+            <!-- Brownie -->
+            <div class="menu-card" data-category="brownies">
+                <div class="card-image-container">
+                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Brownie">
+                </div>
+                <div class="menu-card-content">
+                    <h3>Fudgy Brownie</h3>
+                    <p>Dense and fudgy with rich cocoa and chocolate chunks</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag">Contains Dairy</span>
+                        <span class="dietary-tag">Contains Gluten</span>
+                        <span class="dietary-tag">Contains Nuts</span>
+                    </div>
+                    <div class="menu-card-price">R89.00 (pack of 4)</div>
+                    <button data-id="9" data-name="Fudgy Brownie" data-price="89">
+                        <i class="fas fa-shopping-cart"></i> ADD TO CART
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lemon Bar -->
+            <div class="menu-card" data-category="bars">
+                <div class="card-image-container">
+                    <img src="images/Lemon-bars-1x1-2.jpg" alt="Lemon Bar">
+                </div>
+                <div class="menu-card-content">
+                    <h3>Lemon Bar</h3>
+                    <p>Tart and sweet lemon curd on a buttery shortbread crust with powdered sugar</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag">Contains Dairy</span>
+                        <span class="dietary-tag">Contains Gluten</span>
+                    </div>
+                    <div class="menu-card-price">R89.00 (pack of 4)</div>
+                    <button data-id="10" data-name="Lemon Bar" data-price="89">
+                        <i class="fas fa-shopping-cart"></i> ADD TO CART
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <p>&copy; 2025 Sweet Delight Bakery. All rights reserved.</p>
+        </div>
+        
+        <div class="footer-section">
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank">Facebook</a>
+                        <a href="https://instagram.com" target="_blank">Instagram</a>
+                        <a href="https://twitter.com" target="_blank">Twitter</a>
+                    </div>
+                </div>
+    </footer>
+</body>
+</html>
