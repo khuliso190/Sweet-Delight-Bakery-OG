@@ -1,7 +1,7 @@
 # Sweet-Delight-Bakery-OG
 
 #project overview
-Sweet Delights Bakery is the name. Founded in 2024, Sweet Delights Bakery is a family-run bakery. It serves both walk-in clients and custom cake orders, specializing in artisanal bread, cakes, and pastries. 
+Sweet Delights Bakery is the name. Founded in 2010, Sweet Delights Bakery is a family-run bakery. It serves both walk-in clients and custom cake orders, specializing in artisanal bread, cakes, and pastries. 
 
  Mission: To provide freshly baked goods that are lovingly prepared using premium ingredients. 
 vision: To be the premier neighbourhood bakery renowned for its inventiveness and client satisfaction.  
