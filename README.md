@@ -13,6 +13,7 @@ We source our ingredients locally whenever possible, supporting our community's 
 Our recipes are a blend of classic techniques and modern innovation, resulting in treats that are both comforting and exciting. We take pride in creating not just baked goods, but memorable experiences that brighten your day and create lasting memories.
 
 #CHANGELOG
+
 Navigation & Header
 
 · Added persistent shopping cart icon in navigation across all pages
