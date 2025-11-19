@@ -170,6 +170,7 @@ JavaScript Features:
 This complete overhaul transforms the bakery website from a basic informational site into a modern, interactive web presence that can effectively drive business and engage customers.
 
 REFERENCES
+
 MDN Web Docs (2024) HTML: HyperText Markup Language. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML
  (Accessed: 15 November 2025).
 
